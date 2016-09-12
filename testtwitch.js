@@ -88,7 +88,7 @@ client.on('chat', function(channel, user, message, self){
 	switch (message){
 	
 	case "!raffle"://start a 1 minute raffle
-		setTimeout(function(){raffle(raffleList)}, 36000);
+		setTimeout(function(){raffle(raffleList)}, 60000);
 		client.action("garbanzoguy", "Raffle has been enabled for 1 minute.")
 		raffleEnabled=true;
 		break;
